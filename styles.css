@@ -781,6 +781,7 @@ tr:hover {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 0 -0.25rem;
+  direction: ltr;
 }
 .table-scroll table {
   min-width: max-content;
