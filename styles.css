@@ -777,6 +777,24 @@ tr:hover {
   background: var(--accent-soft);
 }
 
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -0.25rem;
+}
+.table-scroll table {
+  min-width: max-content;
+}
+
+@media (min-width: 768px) {
+  .table-scroll {
+    margin: 0;
+  }
+  .table-scroll table {
+    min-width: 0;
+  }
+}
+
 /* Unified bracket — single row, smaller */
 .bracket-section {
   overflow: hidden;
