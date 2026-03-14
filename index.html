@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home — Grepke Baseball League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">
+      <img src="assets/logo.png" alt="Grepke Baseball League" width="160" height="160" />
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="league-history.html">League History</a>
+      <a href="https://www.espn.com/fantasy/baseball/" target="_blank" rel="noopener noreferrer" class="nav__manage">Manage Your Team</a>
+    </nav>
+  </header>
+
+  <div class="polls-layout">
+    <aside class="sidebar">
+      <h2 class="sidebar__title">Teams &amp; Managers</h2>
+      <ul class="sidebar__teams" id="sidebar-teams">
+        <!-- filled by JS from GBL_TEAMS -->
+      </ul>
+    </aside>
+  <main class="main-content main-content--with-sidebar">
+    <section class="card card--feature" id="current-poll">
+      <div class="card__accent" aria-hidden="true"></div>
+      <h2 class="card__heading"><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></span>Polls</h2>
+      <div class="poll-team-row">
+        <label for="poll-team">Your team</label>
+        <select id="poll-team" name="team">
+          <option value="">— Select your team —</option>
+        </select>
+      </div>
+      <div id="current-poll-content">
+        <div id="active-polls-list"></div>
+      </div>
+      <p id="no-active-poll" class="empty-history" hidden>No polls are live right now. Check back later.</p>
+      <div id="create-poll-panel" class="create-poll-panel" hidden>
+        <h3 class="create-poll-panel__title">Create a new poll</h3>
+        <form id="create-poll-form">
+          <div class="create-poll-field">
+            <label for="create-poll-question">Question</label>
+            <input type="text" id="create-poll-question" name="question" required placeholder="e.g. Should we add CI and MI spots?" />
+          </div>
+          <div class="create-poll-options">
+            <label>Options (2–10)</label>
+            <input type="text" name="option1" placeholder="Option 1" data-option-index="1" />
+            <input type="text" name="option2" placeholder="Option 2" data-option-index="2" />
+            <input type="text" name="option3" placeholder="Option 3 (optional)" data-option-index="3" />
+            <input type="text" name="option4" placeholder="Option 4 (optional)" data-option-index="4" />
+            <input type="text" name="option5" placeholder="Option 5 (optional)" data-option-index="5" />
+            <input type="text" name="option6" placeholder="Option 6 (optional)" data-option-index="6" />
+            <input type="text" name="option7" placeholder="Option 7 (optional)" data-option-index="7" />
+            <input type="text" name="option8" placeholder="Option 8 (optional)" data-option-index="8" />
+            <input type="text" name="option9" placeholder="Option 9 (optional)" data-option-index="9" />
+            <input type="text" name="option10" placeholder="Option 10 (optional)" data-option-index="10" />
+          </div>
+          <button type="submit" class="poll-submit" id="create-poll-submit">Create poll</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="password-modal" class="modal" hidden aria-modal="true" aria-labelledby="password-modal-title">
+      <div class="modal__backdrop"></div>
+      <div class="modal__content">
+        <h3 id="password-modal-title" class="modal__title">Commissioner access</h3>
+        <p class="modal__text">Enter the commissioner password to create polls.</p>
+        <form id="password-form">
+          <input type="password" id="password-input" autocomplete="current-password" placeholder="Password" />
+          <p id="password-error" class="modal__error" hidden>Incorrect password.</p>
+          <div class="modal__actions">
+            <button type="button" class="modal__btn modal__btn--secondary" id="password-cancel">Cancel</button>
+            <button type="submit" class="modal__btn modal__btn--primary">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="card">
+      <h2 class="card__heading"><span class="card__icon card__icon--secondary" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>Poll history</h2>
+      <div id="poll-history">
+        <p class="empty-history">No past polls yet. Results will appear here once polls are closed.</p>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <script src="teams.js"></script>
+  <script src="poll.js"></script>
+</body>
+</html>

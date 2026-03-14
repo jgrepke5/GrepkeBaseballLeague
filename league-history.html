@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>League History — Grepke Baseball League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">
+      <img src="assets/logo.png" alt="Grepke Baseball League" width="160" height="160" />
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="league-history.html" class="active">League History</a>
+      <a href="https://www.espn.com/fantasy/baseball/" target="_blank" rel="noopener noreferrer" class="nav__manage">Manage Your Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card podium-section">
+      <h2 class="card__heading"><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M6 9a3 3 0 003 3h6a3 3 0 003-3M9 22v-4M15 22v-4"/><path d="M9 18h6"/></svg></span>2025 — Top finishers</h2>
+      <div class="podium">
+        <div class="podium-block second">
+          <img src="assets/trophy_second.svg" alt="" class="podium-block__trophy" width="80" height="80" />
+          <span class="place" aria-hidden="true">2nd</span>
+          <span class="team-name">The Brew Crew Sluggers</span>
+        </div>
+        <div class="podium-block first">
+          <img src="assets/trophy_first.svg" alt="" class="podium-block__trophy" width="80" height="80" />
+          <span class="place" aria-hidden="true">1st</span>
+          <span class="team-name">Neil's Lemmings</span>
+        </div>
+        <div class="podium-block third">
+          <img src="assets/trophy_third.svg" alt="" class="podium-block__trophy" width="80" height="80" />
+          <span class="place" aria-hidden="true">3rd</span>
+          <span class="team-name">Lollygaggers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card bracket-section">
+      <h2 class="card__heading"><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4v16M16 4v16M4 8h4M4 16h4M16 8h4M16 16h4"/><path d="M4 12h16"/></svg></span>Playoffs</h2>
+      <div class="bracket-wrap bracket-wrap--unified">
+        <div class="bracket bracket--unified bracket--main">
+          <div class="bracket-round">
+            <div class="bracket-round-title">Round 1</div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">8</span><span class="name">Eli De La Cruz</span><span class="record">4-5-1</span></div><div class="bracket-slot winner"><span class="seed">1</span><span class="name">Lollygaggers</span><span class="record">5-4-1</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">4</span><span class="name">Matt's Proud Dads</span><span class="record">4-6-0</span></div><div class="bracket-slot winner"><span class="seed">5</span><span class="name">The Brew Crew Sluggers</span><span class="record">6-4-0</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">6</span><span class="name">Brittle Fig Leaves</span><span class="record">2-7-1</span></div><div class="bracket-slot winner"><span class="seed">3</span><span class="name">Claudia's Catches</span><span class="record">7-2-1</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">7</span><span class="name">Cracker Jack Crushers</span><span class="record">1-9-0</span></div><div class="bracket-slot winner"><span class="seed">2</span><span class="name">Neil's Lemmings</span><span class="record">9-1-0</span></div></div>
+          </div>
+          <div class="bracket-round">
+            <div class="bracket-round-title">Semifinals</div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">1</span><span class="name">Lollygaggers</span><span class="record">4-5-1</span></div><div class="bracket-slot winner"><span class="seed">5</span><span class="name">Brew Crew Sluggers</span><span class="record">5-4-1</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">3</span><span class="name">Claudia's Catches</span><span class="record">2-7-1</span></div><div class="bracket-slot winner"><span class="seed">2</span><span class="name">Neil's Lemmings</span><span class="record">7-2-1</span></div></div>
+          </div>
+          <div class="bracket-round">
+            <div class="bracket-round-title">Championship</div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">5</span><span class="name">Brew Crew Sluggers</span><span class="record">3-6-1</span></div><div class="bracket-slot winner"><span class="seed">2</span><span class="name">Neil's Lemmings</span><span class="record">6-3-1</span></div></div>
+          </div>
+        </div>
+      </div>
+      <h3 class="bracket-subtitle">Consolation bracket</h3>
+      <div class="bracket-wrap bracket-wrap--unified bracket-wrap--consolation">
+        <div class="bracket bracket--unified bracket--consolation">
+          <div class="bracket-round bracket-round--consol">
+            <div class="bracket-round-title">Consol. R2</div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">6</span><span class="name">Brittle Fig Leaves</span><span class="record">4-6-0</span></div><div class="bracket-slot winner"><span class="seed">4</span><span class="name">Matt's Proud Dads</span><span class="record">6-4-0</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">8</span><span class="name">Eli De La Cruz</span><span class="record">3-6-1</span></div><div class="bracket-slot winner"><span class="seed">7</span><span class="name">Cracker Jack Crushers</span><span class="record">6-3-1</span></div></div>
+          </div>
+          <div class="bracket-round bracket-round--consol">
+            <div class="bracket-round-title">Consol. R3</div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">3</span><span class="name">Claudia's Catches</span><span class="record">3-6-1</span></div><div class="bracket-slot winner"><span class="seed">1</span><span class="name">Lollygaggers</span><span class="record">6-3-1</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">7</span><span class="name">Cracker Jack Crushers</span><span class="record">1-9-0</span></div><div class="bracket-slot winner"><span class="seed">4</span><span class="name">Matt's Proud Dads</span><span class="record">9-1-0</span></div></div>
+            <div class="bracket-game"><div class="bracket-slot"><span class="seed">8</span><span class="name">Eli De La Cruz</span><span class="record">5-5-0</span></div><div class="bracket-slot"><span class="seed">6</span><span class="name">Brittle Fig Leaves</span><span class="record">5-5-0</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card__heading"><span class="card__icon card__icon--secondary" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>2025 — Season stats</h2>
+      <p class="section-title">(R, H, TB, HR, AVG, IP, W, SV, ERA, WHIP)</p>
+      <table>
+        <thead>
+          <tr>
+            <th>RK</th>
+            <th>Team</th>
+            <th>R</th>
+            <th>H</th>
+            <th>TB</th>
+            <th>HR</th>
+            <th>AVG</th>
+            <th>IP</th>
+            <th>W</th>
+            <th>SV</th>
+            <th>ERA</th>
+            <th>WHIP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Neil's Lemmings</td><td>845</td><td>240</td><td>818</td><td>162</td><td>0.2587</td><td>1187</td><td>84</td><td>91</td><td>3.118</td><td>1.141</td></tr>
+          <tr><td>2</td><td>The Brew Crew Sluggers</td><td>872</td><td>254</td><td>856</td><td>209</td><td>0.2505</td><td>927</td><td>56</td><td>43</td><td>3.466</td><td>1.141</td></tr>
+          <tr><td>3</td><td>Lollygaggers</td><td>865</td><td>244</td><td>851</td><td>142</td><td>0.2622</td><td>1270</td><td>85</td><td>80</td><td>3.367</td><td>1.183</td></tr>
+          <tr><td>4</td><td>Claudia's Catches of the Day</td><td>820</td><td>250</td><td>812</td><td>102</td><td>0.2594</td><td>994</td><td>74</td><td>93</td><td>3.305</td><td>1.079</td></tr>
+          <tr><td>5</td><td>Matt's Proud Dads</td><td>837</td><td>241</td><td>867</td><td>138</td><td>0.2583</td><td>1141</td><td>76</td><td>112</td><td>3.154</td><td>1.103</td></tr>
+          <tr><td>6</td><td>The Cracker Jack Crushers</td><td>773</td><td>224</td><td>690</td><td>128</td><td>0.2527</td><td>721</td><td>51</td><td>29</td><td>3.841</td><td>1.257</td></tr>
+          <tr><td>7</td><td>Brittle Fig Leaves</td><td>768</td><td>211</td><td>778</td><td>127</td><td>0.2463</td><td>1106</td><td>78</td><td>66</td><td>3.295</td><td>1.112</td></tr>
+          <tr><td>8</td><td>Eli De La Cruz</td><td>807</td><td>221</td><td>725</td><td>122</td><td>0.2671</td><td>977</td><td>47</td><td>43</td><td>3.789</td><td>1.182</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="card__heading"><span class="card__icon card__icon--secondary" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"/><line x1="12" y1="10" x2="12" y2="20"/><line x1="18" y1="4" x2="18" y2="20"/><line x1="6" y1="16" x2="6" y2="20"/></svg></span>2025 — Regular season</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>RK</th>
+            <th>Team</th>
+            <th>W</th>
+            <th>L</th>
+            <th>T</th>
+            <th>PCT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Lollygaggers</td><td>86</td><td>44</td><td>10</td><td>0.65</td></tr>
+          <tr><td>2</td><td>Neil's Lemmings</td><td>87</td><td>47</td><td>6</td><td>0.643</td></tr>
+          <tr><td>3</td><td>Claudia's Catches of the Day</td><td>74</td><td>57</td><td>9</td><td>0.561</td></tr>
+          <tr><td>4</td><td>Matt's Proud Dads</td><td>71</td><td>61</td><td>8</td><td>0.536</td></tr>
+          <tr><td>5</td><td>The Brew Crew Sluggers</td><td>69</td><td>67</td><td>4</td><td>0.507</td></tr>
+          <tr><td>6</td><td>Brittle Fig Leaves</td><td>66</td><td>71</td><td>3</td><td>0.482</td></tr>
+          <tr><td>7</td><td>The Cracker Jack Crushers</td><td>45</td><td>94</td><td>1</td><td>0.325</td></tr>
+          <tr><td>8</td><td>Eli De La Cruz</td><td>40</td><td>97</td><td>3</td><td>0.296</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
