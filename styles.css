@@ -780,18 +780,24 @@ tr:hover {
 /* Unified bracket — single row, smaller */
 .bracket-section {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bracket-wrap--unified {
   overflow-x: auto;
   padding: 0.5rem 0;
   margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .bracket--unified {
   display: flex;
   align-items: stretch;
-  gap: 0;
+  gap: 1.5rem;
   min-width: min-content;
   font-size: 0.75rem;
 }
@@ -801,7 +807,7 @@ tr:hover {
   flex-direction: column;
   justify-content: center;
   min-width: 118px;
-  padding: 0 6px;
+  padding: 0 0.75rem;
 }
 
 .bracket--unified .bracket-round-title {
